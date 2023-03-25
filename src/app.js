@@ -29,7 +29,7 @@ app.post("/books", (req, res) => {
   res.status(201).send("Book added");
 });
 
-app.put("/books/:id", (req, res) => {
+app.patch("/books/:id", (req, res) => {
   let index = findBook(req.params.id);
   books[index].title = req.body.title;
   res.json(books);
