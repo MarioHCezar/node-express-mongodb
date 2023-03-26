@@ -55,7 +55,7 @@ app.delete("/books/:id", (req, res) => {
 });
 
 const findBook = (id) => {
-  return books.findIndex((book) => book.id == id);
+  return books.findIndex((book) => book.id === id);
 };
 
 export default app;
